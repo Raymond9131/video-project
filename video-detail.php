@@ -16,10 +16,10 @@
 <div class="row">
 <div class="col-md-9">
 <div class="detailsbox">
-<img src="images/details.jpg" alt=""/>
-<div class="play_overlay">
-<a href="#" data-toggle="modal" data-target="#exampleModal" class="play"><i class="fa fa-play"></i></a>
-</div>
+<a href="images/details.jpg" class="lightbox" data-group="gallery">
+  <img src="images/details.jpg" alt="" >
+</a>
+
 </div>
 </div>
 
@@ -543,3 +543,8 @@
     </div>
   </div>
 </div>
+<link href="https://www.cssscript.com/demo/content-lightbox-tobii/dist/css/tobii.css" rel="stylesheet">
+<script src="https://www.cssscript.com/demo/content-lightbox-tobii/dist/js/tobii.js"></script>
+<script>
+  var tobii = new Tobii()
+</script>
