@@ -92,7 +92,7 @@ Select Category: <div class="select-custom">
 			  <div class="col-md-12">
 			  <label>Give Your Image a Category</label>
 			  </div>
-			  <div class="col-md-6">
+			  <div class="col-md-9">
 			  <div class="form-group">
 			  
 			 <select class="form-control">
@@ -103,9 +103,6 @@ Select Category: <div class="select-custom">
 			 <option>Select Category</option>
 			 </select>
 			  </div>
-			  </div>
-			  
-			  <div class="col-md-6">
 			  <div class="form-group">
 			  
 			 <select class="form-control">
@@ -116,14 +113,26 @@ Select Category: <div class="select-custom">
 			 <option>Select Sub Category</option>
 			 </select>
 			  </div>
-			  </div>
-			  
-			  <div class="col-md-12">
 			  <div class="form-group">
 			  <label>Give Your Image Title</label>
 			 <input type="text" class="form-control"/>
 			  </div>
 			  </div>
+			  
+			  <div class="col-md-3">
+          <label>Video Thumbnail</label>
+          <div id="set_crope_image_data" class="form-group">
+          <img style="width:100%; height: 95px;" src="https://imratedme.com/static/web/images/video_thuim.png">  
+          </div>
+          
+            <div class="form-group">
+              <input type="hidden" name="thumbnail" id="set_videos_thumbnail">
+             <input type="file" accept=".png, .jpg, .jpeg" required="" class="form-control">
+             
+          </div>
+        </div>
+			  
+			  
 			   <div class="col-md-12">
 			  <div class="form-group">
 			  <label>Discribe your Image</label>
