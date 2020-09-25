@@ -136,7 +136,7 @@ Select Category: <div class="select-custom">
 			   <div class="col-md-12">
 			  <div class="form-group">
 			  <label>Discribe your Image</label>
-			 <textarea class="form-control"></textarea>
+			 <textarea class="form-control" required="" id="summernote" name="description"></textarea>
 			  </div>
 			  </div>
 			  <div class="col-md-12 text-right">
@@ -169,7 +169,17 @@ Select Category: <div class="select-custom">
 </section>
 
 <?php include("footer.php"); ?>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.js"></script>
 <script>
+$(document).ready(function() {
+  $('#summernote').summernote({
+        placeholder: 'Description',
+        tabsize: 2,
+        height: 200
+      });
+});
+
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
         var href = $(e.target).attr('href');
